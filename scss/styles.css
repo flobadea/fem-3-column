@@ -1,0 +1,141 @@
+body {
+  font-size: 0.9375rem;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f2f2f2;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    height: 100vh;
+  }
+}
+
+.container .card {
+  margin: 4.9375rem 0 4.9375rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.container .card img {
+  margin: 1.25rem 0 0 1.25rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .container .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.container .card .item {
+  padding: 1.875rem 1.875rem 1.875rem 1.875rem;
+  width: 16.875rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .container .card .item {
+    width: 15.4375rem;
+  }
+}
+
+.container .card .sedans {
+  background-color: #e38826;
+  border-radius: 8px 8px 0 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .container .card .sedans {
+    border-radius: 8px 0 0 8px;
+  }
+}
+
+.container .card .suvs {
+  background-color: #006970;
+}
+
+.container .card .luxury {
+  background-color: #004241;
+  border-radius: 0 0 8px 8px;
+}
+
+@media screen and (min-width: 1440px) {
+  .container .card .luxury {
+    border-radius: 0 8px 8px 0;
+  }
+}
+
+.container .card .title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  margin: 1.6875rem 0 0 1.25rem;
+  text-transform: uppercase;
+}
+
+.container .card .description {
+  line-height: 1.7;
+  margin: 1.625rem 1.25rem 0 1.25rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .container .card .description {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.container .card .button {
+  display: inline-block;
+  padding: 0.75rem 1.875rem;
+  margin: 1.625rem 0 1.25rem 1.25rem;
+  background-color: #f2f2f2;
+  border-radius: 1.25rem;
+  border: 2px solid #f2f2f2;
+  text-decoration: none;
+}
+
+.container .card .button.orange {
+  color: #e38826;
+}
+
+.container .card .button.d-cyan {
+  color: #006970;
+}
+
+.container .card .button.vd-cyan {
+  color: #004241;
+}
+
+.container .card .button:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+}
+/*# sourceMappingURL=styles.css.map */

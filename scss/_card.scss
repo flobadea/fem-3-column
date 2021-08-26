@@ -1,0 +1,95 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $veryLightGrey;
+    
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    @include breakpoint-up('desktop'){
+        height: 100vh;
+    }
+    
+    width: 100%;
+
+    .card{
+        margin: rem(79) 0 rem(79) 0;
+        display: flex;
+        flex-direction: column;
+        color: $transparentWhite;
+
+        img{
+            margin: rem(20) 0 0 rem(20);
+        }
+
+        @include breakpoint-up('desktop'){
+            flex-direction: row;
+        }
+        .item{
+            padding: rem(30) rem(30) rem(30) rem(30);
+            width: rem(270);
+            @include breakpoint-up('desktop'){
+                width: rem(247);
+            }
+        }
+        .sedans{
+            background-color: $brightOrange;            
+            border-radius: 8px 8px 0 0;
+            @include breakpoint-up('desktop'){
+                border-radius: 8px 0 0 8px;
+            }
+        }
+        .suvs{
+            background-color: $darkCyan;
+        }
+        .luxury{
+            background-color: $veryDarkCyan;
+            border-radius: 0 0 8px 8px;
+            @include breakpoint-up('desktop'){
+                border-radius: 0 8px 8px 0;
+            }
+        }
+
+        .title{
+            font-family: $bigShoulders;
+            font-size: rem(40);
+            margin: rem(27) 0 0 rem(20);
+            text-transform: uppercase;
+        }
+        .description{
+            line-height: 1.7;
+            margin: rem(26) rem(20) 0 rem(20);
+            @include breakpoint-up('desktop'){
+                margin-bottom: rem(40);
+            }
+        }
+        
+
+        .button{
+            display: inline-block;
+            padding: rem(12) rem(30);
+            margin: rem(26) 0 rem(20) rem(20);
+            background-color: $veryLightGrey;
+            border-radius: rem(20);
+            border: 2px solid $veryLightGrey;
+            text-decoration: none;
+
+            &.orange {
+                color: $brightOrange;
+            }
+            &.d-cyan{
+                color:$darkCyan;
+            }
+            &.vd-cyan{
+                color:$veryDarkCyan;
+            }
+
+            &:hover{
+                color: $veryLightGrey;
+                background-color: transparent;
+            }
+        }
+    }
+}
